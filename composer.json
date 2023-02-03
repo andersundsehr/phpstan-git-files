@@ -1,0 +1,39 @@
+{
+  "name": "andersundsehr/phpstan-git-files",
+  "description": "Add all git files into phpstan config automatically",
+  "type": "phpstan-extension",
+  "autoload": {
+    "psr-4": {
+      "AUS\\PhpstanGitFiles\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Matthias Vogel",
+      "email": "m.vogel@andersundsehr.com"
+    }
+  ],
+  "require": {
+    "phpstan/phpstan": "^1.9",
+    "php": "~8.0 || ~8.1 || ~8.2",
+    "composer-plugin-api" : "^2.1.0"
+  },
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "phpro/grumphp": true,
+      "phpstan/extension-installer": true,
+      "pluswerk/grumphp-config": true
+    }
+  },
+  "require-dev": {
+    "pluswerk/grumphp-config": "^6.1"
+  },
+  "extra": {
+    "phpstan": {
+      "includes": [
+        "extension.neon"
+      ]
+    }
+  }
+}
