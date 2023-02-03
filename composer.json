@@ -2,6 +2,7 @@
   "name": "andersundsehr/phpstan-git-files",
   "description": "Add all git files into phpstan config automatically",
   "type": "phpstan-extension",
+  "license" : "LGPL-3.0-or-later",
   "autoload": {
     "psr-4": {
       "AUS\\PhpstanGitFiles\\": "src/"
