@@ -4,16 +4,9 @@ This phpstan extension automatically adds all your `.php` files from git to be c
 
 ## install
 
-`composer req --dev phpstan/extension-installer andersundsehr/phpstan-git-files`
-
-<details>
-  <summary>Manual installation</summary>
-
-If you don't want to use `phpstan/extension-installer`, put this into your phpstan.neon config:
+`composer req --dev andersundsehr/phpstan-git-files`
 
 ```NEON
 includes:
-    - vendor/andersundsehr/phpstan-git-files/extension.neon
+    - vendor/andersundsehr/phpstan-git-files/extension.php
 ```
-
-</details>
