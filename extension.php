@@ -1,7 +1,6 @@
 <?php
 
 return $GLOBALS['andersundsehr/phpstan-git-files.memory-cache'] ??= (function () {
-
     $exec = fn(string $command) => array_filter(explode("\n", (string)shell_exec($command)));
 
     $command = <<<BASH
@@ -26,7 +25,9 @@ BASH;
     return [
         'parameters' => [
             'paths' => $absoluteFiles,
-            'excludePaths' => $absoluteIgnoredFiles,
+            'excludePaths' => [
+                'analyse' => $absoluteIgnoredFiles,
+            ],
         ],
     ];
 })();
