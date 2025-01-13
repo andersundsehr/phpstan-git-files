@@ -26,6 +26,11 @@
     },
     "sort-packages": true
   },
+  "extra": {
+    "branch-alias": {
+      "dev-main": "1.0-dev"
+    }
+  },
   "scripts": {
     "post-update-cmd": [
       "composer bump -D",

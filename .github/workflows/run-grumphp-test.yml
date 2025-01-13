@@ -15,5 +15,5 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: git config --global --add safe.directory /__w/phpstan-git-files/phpstan-git-files
-      - run: COMPOSER_ROOT_VERSION=1.99.99 composer install --no-progress --no-scripts -n
+      - run: COMPOSER_ROOT_VERSION=dev-main composer install --no-progress --no-scripts -n
       - run: ./vendor/bin/grumphp run
